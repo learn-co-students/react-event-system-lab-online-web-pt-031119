@@ -5,19 +5,19 @@ import Keypad from './Keypad.js';
 export default class EyesOnMe extends Component {
 
 
-  focus = () => {
-    console.log("Good!")
+  focusNow = () => {
+    return console.log("Good!")
   }
 
-  blur = () => {
-    console.log("Hey! Eyes on me!")
+  blurNow = () => {
+    return console.log("Hey! Eyes on me!")
   }
 
   render() {
     return (
-      <button>
-      onFocus={this.focus}
-      onBlur={this.blur}
+      <button
+      onFocus={this.focusNow}
+      onBlur={this.blurNow}>
       </button>
     )
   }

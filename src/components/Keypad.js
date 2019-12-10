@@ -12,7 +12,7 @@ export default class Keypad extends Component {
 
   render() {
     return(
-      <input type="password" keyUp={this.enterPassword}></input>
+      <input type="password" onKeyUp={this.enterPassword}></input>
     )
   }
 
